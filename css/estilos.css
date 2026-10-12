@@ -1,0 +1,392 @@
+/* ============================= */
+/* CONFIGURACIÓN GENERAL */
+/* ============================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff7fb;
+    color: #333;
+    line-height: 1.6;
+}
+
+
+/* ============================= */
+/* ENCABEZADO */
+/* ============================= */
+
+.header {
+    background-color: #ffffff;
+    padding: 15px 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.logo {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.logo-container h1 {
+    font-size: 24px;
+    color: #b44b78;
+}
+
+
+/* ============================= */
+/* MENÚ */
+/* ============================= */
+
+.nav {
+    display: flex;
+    gap: 25px;
+}
+
+.nav a {
+    text-decoration: none;
+    color: #555;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.nav a:hover {
+    color: #b44b78;
+}
+
+
+/* ============================= */
+/* PORTADA */
+/* ============================= */
+
+.hero {
+    min-height: 600px;
+    padding: 60px 8%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+.hero-text {
+    flex: 1;
+}
+
+.hero-text h2 {
+    font-size: 50px;
+    color: #b44b78;
+    margin-bottom: 20px;
+}
+
+.hero-text p {
+    font-size: 19px;
+    margin-bottom: 30px;
+    max-width: 550px;
+}
+
+.hero-image {
+    flex: 1;
+}
+
+.hero-image img {
+    width: 100%;
+    max-height: 450px;
+    object-fit: cover;
+    border-radius: 25px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+
+/* ============================= */
+/* BOTONES */
+/* ============================= */
+
+.btn {
+    display: inline-block;
+    background-color: #b44b78;
+    color: white;
+    padding: 13px 25px;
+    border-radius: 25px;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: #8e365d;
+    transform: translateY(-2px);
+}
+
+
+/* ============================= */
+/* PRESENTACIÓN */
+/* ============================= */
+
+.presentacion {
+    text-align: center;
+    padding: 70px 15%;
+    background-color: white;
+}
+
+.presentacion h2 {
+    color: #b44b78;
+    margin-bottom: 20px;
+    font-size: 32px;
+}
+
+.presentacion p {
+    font-size: 18px;
+}
+
+
+/* ============================= */
+/* SERVICIOS DESTACADOS */
+/* ============================= */
+
+.destacados {
+    text-align: center;
+    padding: 70px 8%;
+}
+
+.destacados h2 {
+    color: #b44b78;
+    margin-bottom: 40px;
+    font-size: 32px;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    margin-bottom: 40px;
+}
+
+.card {
+    background-color: white;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+}
+
+.card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.card h3 {
+    color: #b44b78;
+    margin: 15px 0 8px;
+}
+
+
+/* ============================= */
+/* TÍTULOS DE PÁGINAS */
+/* ============================= */
+
+.page-title {
+    text-align: center;
+    padding: 70px 20px 40px;
+}
+
+.page-title h2 {
+    color: #b44b78;
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.page-title p {
+    font-size: 18px;
+}
+
+
+/* ============================= */
+/* SERVICIOS */
+/* ============================= */
+
+.services {
+    padding: 30px 8% 80px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
+.service-card {
+    background-color: white;
+    padding: 25px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+}
+
+.service-card img {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.service-card h3 {
+    color: #b44b78;
+    margin: 15px 0;
+}
+
+.service-card p {
+    margin-bottom: 20px;
+}
+
+
+/* ============================= */
+/* FORMULARIO */
+/* ============================= */
+
+.form-section {
+    padding: 20px 10% 80px;
+}
+
+.appointment-form {
+    max-width: 700px;
+    margin: auto;
+    background-color: white;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.10);
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 7px;
+    font-weight: bold;
+    color: #555;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 13px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    font-size: 16px;
+    outline: none;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    border-color: #b44b78;
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+.btn-form {
+    width: 100%;
+    font-size: 17px;
+}
+
+
+/* ============================= */
+/* CONTACTO */
+/* ============================= */
+
+.contact-container {
+    padding: 30px 8% 80px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
+.contact-card {
+    background-color: white;
+    padding: 35px;
+    border-radius: 20px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+}
+
+.contact-card h3 {
+    color: #b44b78;
+    margin-bottom: 20px;
+}
+
+.contact-card p {
+    margin-bottom: 12px;
+}
+
+
+/* ============================= */
+/* PIE DE PÁGINA */
+/* ============================= */
+
+.footer {
+    background-color: #b44b78;
+    color: white;
+    text-align: center;
+    padding: 25px;
+    margin-top: 30px;
+}
+
+
+/* ============================= */
+/* RESPONSIVE */
+/* ============================= */
+
+@media (max-width: 800px) {
+
+    .header {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .nav {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-text h2 {
+        font-size: 38px;
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+
+    .services {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-container {
+        grid-template-columns: 1fr;
+    }
+
+}

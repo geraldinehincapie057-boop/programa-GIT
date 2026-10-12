@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>Agendar cita - Salón de Belleza</title>
+
+    <link rel="stylesheet"
+        href="css/estilos.css">
+
+</head>
+
+<body>
+
+    <!-- ENCABEZADO -->
+
+    <header class="header">
+
+        <div class="logo-container">
+
+            <img src="logo_salon_belleza.png"
+                alt="Logo del salón"
+                class="logo">
+
+            <h1>Salón de Belleza</h1>
+
+        </div>
+
+
+        <!-- NAVEGACIÓN -->
+
+        <nav class="nav">
+
+            <a href="index.html">
+                Inicio
+            </a>
+
+            <a href="servicios.html">
+                Servicios
+            </a>
+
+            <a href="agendar.html">
+                Agendar cita
+            </a>
+
+            <a href="contacto.html">
+                Contacto
+            </a>
+
+        </nav>
+
+    </header>
+
+
+    <!-- CONTENIDO -->
+
+    <main>
+
+        <section class="page-title">
+
+            <h2>Agendar una cita</h2>
+
+            <p>
+                Completa el siguiente formulario
+                para solicitar tu cita.
+            </p>
+
+        </section>
+
+
+        <!-- FORMULARIO -->
+
+        <section class="form-section">
+
+            <form id="formCita"
+                class="appointment-form">
+
+
+                <!-- NOMBRE -->
+
+                <div class="form-group">
+
+                    <label for="nombre">
+                        Nombre completo
+                    </label>
+
+                    <input
+                        type="text"
+                        id="nombre"
+                        name="nombre"
+                        placeholder="Ingrese su nombre"
+                        required>
+
+                </div>
+
+
+                <!-- TELÉFONO -->
+
+                <div class="form-group">
+
+                    <label for="telefono">
+                        Teléfono
+                    </label>
+
+                    <input
+                        type="tel"
+                        id="telefono"
+                        name="telefono"
+                        placeholder="Ingrese su teléfono"
+                        required>
+
+                </div>
+
+
+                <!-- CORREO -->
+
+                <div class="form-group">
+
+                    <label for="correo">
+                        Correo electrónico
+                    </label>
+
+                    <input
+                        type="email"
+                        id="correo"
+                        name="correo"
+                        placeholder="Ingrese su correo"
+                        required>
+
+                </div>
+
+
+                <!-- SERVICIO -->
+
+                <div class="form-group">
+
+                    <label for="servicio">
+                        Seleccione el servicio
+                    </label>
+
+                    <select
+                        id="servicio"
+                        name="servicio"
+                        required>
+
+                        <option value="">
+                            Seleccione una opción
+                        </option>
+
+                        <option value="manicure">
+                            Manicure
+                        </option>
+
+                        <option value="pedicure">
+                            Pedicure
+                        </option>
+
+                        <option value="cabello">
+                            Corte de cabello
+                        </option>
+
+                        <option value="peinado">
+                            Peinado
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <!-- FECHA -->
+
+                <div class="form-group">
+
+                    <label for="fecha">
+                        Fecha de la cita
+                    </label>
+
+                    <input
+                        type="date"
+                        id="fecha"
+                        name="fecha"
+                        required>
+
+                </div>
+
+
+                <!-- HORA -->
+
+                <div class="form-group">
+
+                    <label for="hora">
+                        Hora de la cita
+                    </label>
+
+                    <input
+                        type="time"
+                        id="hora"
+                        name="hora"
+                        required>
+
+                </div>
+
+
+                <!-- OBSERVACIONES -->
+
+                <div class="form-group">
+
+                    <label for="observaciones">
+                        Observaciones
+                    </label>
+
+                    <textarea
+                        id="observaciones"
+                        name="observaciones"
+                        rows="5"
+                        placeholder="Escriba alguna observación">
+                    </textarea>
+
+                </div>
+
+
+                <!-- BOTÓN -->
+
+                <button
+                    type="submit"
+                    class="btn btn-form">
+
+                    Agendar cita
+
+                </button>
+
+            </form>
+
+        </section>
+
+    </main>
+
+
+    <!-- PIE DE PÁGINA -->
+
+    <footer class="footer">
+
+        <p>
+            © 2026 Salón de Belleza
+        </p>
+
+    </footer>
+
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
